@@ -25,23 +25,23 @@
 	            <span class="navbar-toggler-icon"></span>
 	          </button>
 	          <div class="collapse navbar-collapse" id="navbarNav">
-	            <ul class="navbar-nav">
-	              <li class="nav-item active">
+	            <ul class="navbar-nav" id="menu">
+	              <li data-menuanchor="block1" class="nav-item">
 	                <a class="nav-link" href="#block1">Home</a>
 	              </li>
 	              <li class="nav-item">
 	                <a class="nav-link" href="#">About</a>
 	              </li>
-	              <li class="nav-item">
+	              <li data-menuanchor="block2" class="nav-item">
 	                <a class="nav-link" href="#block2">Poster</a>
 	              </li>
-	              <li class="nav-item">
+	              <li data-menuanchor="block3" class="nav-item">
 	                <a class="nav-link" href="#block3">Gallery</a>
 	              </li> 
-	              <li class="nav-item">
+	              <li data-menuanchor="block4" class="nav-item">
 	                <a class="nav-link" href="#block4">Menu</a>
 	              </li>
-	              <li class="nav-item">
+	              <li data-menuanchor="block5" class="nav-item">
 	                <a class="nav-link" href="#block5">Contacts</a>
 	              </li>             
 	            </ul>
@@ -58,53 +58,62 @@
 	<div id="fullpage"> 
 
 		<section data-anchor="block1" id="#block1" class="h-100 section" style="background: linear-gradient(to top, rgba(0,0,0,0.6), rgba(22,85,179,0.6)), url('img/bg-general.jpg');">
-			<div class="container position-first">
-						<div class="first__position">
-							<div class="first__logo">
-								<a href="#">
-									<img class="" src="img/logo.png">
-								</a>
-							</div>
-							<div class="first__title">
-								<h1 class="title title--first">almondo</h1>
-								<div class="subtitle">Night club</div>
-							</div>
-							<div class="first__category">
-								<div class="title">Poster</div>
-								<div class="subtitle">only juicy parties</div>
-							</div>
-							<a href="#" class="first__link link-more">More info</a>
+			<div class="first">
+				<div class="slider first__slide" style="background: linear-gradient(to top, rgba(0,0,0,0.6), rgba(22,85,179,0.6)), url('img/bg-general.jpg');">
+					<div class="container">
+						<div class="first__logo">
+							<a href="#">
+								<img class="" src="img/logo.png">
+							</a>
 						</div>
-					</div>
-			<!-- <div class="first h-100">
-				<div class="slider first__slide">
-					<img class="h-100" src="img/bg-general.jpg">
-					<div class="container position-first">
-						<div class="first__position">
-							<div class="first__logo">
-								<a href="#">
-									<img class="" src="img/logo.png">
-								</a>
-							</div>
-							<div class="first__title">
-								<h1 class="title title--first">almondo</h1>
-								<div class="subtitle">Night club</div>
-							</div>
-							<div class="first__category">
-								<div class="title">Poster</div>
-								<div class="subtitle">only juicy parties</div>
-							</div>
-							<a href="#" class="first__link link-more">More info</a>
+						<div class="first__title">
+							<h1 class="title title--first">almondo</h1>
+							<div class="subtitle">Night club</div>
 						</div>
+						<div class="first__category">
+							<div class="title">Poster</div>
+							<div class="subtitle">only juicy parties</div>
+						</div>
+						<a href="#block2" class="first__link link-more">More info</a>
 					</div>
 				</div>
-				<div class="slider first__slide">
-					<img class="" src="img/bg-menu.jpg">
+				<div class="slider first__slide" style="background: linear-gradient(to top, rgba(0,0,0,0.6), rgba(22,85,179,0.6)), url('img/bg-general2.jpg');">
+					<div class="container">
+						<div class="first__logo">
+							<a href="#">
+								<img class="" src="img/logo.png">
+							</a>
+						</div>
+						<div class="first__title">
+							<h1 class="title title--first">almondo</h1>
+							<div class="subtitle">Night club</div>
+						</div>
+						<div class="first__category">
+							<div class="title">Gallery</div>
+							<div class="subtitle">Photo parties</div>
+						</div>
+						<a href="#block3" class="first__link link-more">More info</a>
+					</div>
 				</div>
-				<div class="slider first__slide">
-					<img class="" src="img/bg-gallery.jpg">
+				<div class="slider first__slide" style="background: linear-gradient(to top, rgba(0,0,0,0.6), rgba(22,85,179,0.6)), url('img/bg-general1.jpg');">
+					<div class="container">
+						<div class="first__logo">
+							<a href="#">
+								<img class="" src="img/logo.png">
+							</a>
+						</div>
+						<div class="first__title">
+							<h1 class="title title--first">almondo</h1>
+							<div class="subtitle">Night club</div>
+						</div>
+						<div class="first__category">
+							<div class="title">Menu</div>
+							<div class="subtitle">Great cocktails to relax</div>
+						</div>
+						<a href="#block4" class="first__link link-more">More info</a>
+					</div>
 				</div>
-			</div> -->
+			</div>
 
 		</section>
 <!--POSTER-->
@@ -119,8 +128,8 @@
 				</div>
 			</div>
 			<div class="container h-100 py-5">
-				<div class="title py-5">Poster</div>
 				<div class="row h-100">
+					<div class="title col-12 py-5 event__titles">Poster</div>
 					<div class="col-4 event">
 						<div class="event--item">
 							<div class="row m-0">
@@ -138,6 +147,7 @@
 							</div>
 							<div class="event__article">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam maxime culpa, eaque. Quos fugit quas nisi quibusdam reprehenderit maxime ab. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias alias id nesciunt quis dolorem sunt unde ipsam accusantium rerum nam. Id iure blanditiis veritatis, aspernatur eos minus, ullam tenetur eveniet!</div>
 							<a href="#" class="event__link link-more">More info</a>
+							<a href="#" class="event__link--hide link-more">Hide</a>
 						</div>
 					</div>
 					<div class="col-4 event">
@@ -157,6 +167,7 @@
 							</div>
 							<div class="event__article">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam maxime culpa, eaque. Quos fugit quas nisi quibusdam reprehenderit maxime ab. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias alias id nesciunt quis dolorem sunt unde ipsam accusantium rerum nam. Id iure blanditiis veritatis, aspernatur eos minus, ullam tenetur eveniet!</div>
 							<a href="#" class="event__link link-more">More info</a>
+							<a href="#" class="event__link--hide link-more">Hide</a>
 						</div>
 					</div>
 					<div class="col-4 event">
@@ -176,6 +187,7 @@
 							</div>
 							<div class="event__article">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam maxime culpa, eaque. Quos fugit quas nisi quibusdam reprehenderit maxime ab. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias alias id nesciunt quis dolorem sunt unde ipsam accusantium rerum nam. Id iure blanditiis veritatis, aspernatur eos minus, ullam tenetur eveniet!</div>
 							<a href="#" class="event__link link-more">More info</a>
+							<a href="#" class="event__link--hide link-more">Hide</a>
 						</div>
 					</div>
 				</div>
@@ -364,6 +376,8 @@
 			$(document).ready(function() {
 	            $("#lightgallery").lightGallery(); 
 	        });
+
+			
 			
 		</script>
 		
