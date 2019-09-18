@@ -19,10 +19,20 @@
 		<link rel="stylesheet" href="css/styles.min.css">
 	</head>
 <body>
-	<div class="navigation fixed-top w-100 container z-indx"> 
-	        <nav class="navbar navbar-expand-lg">          
+	<div class=" fixed-top w-100 z-indx"> 
+	        <div class="line">
+	          <div class="container line--general">
+	            <a href="#block1" class="line__home">
+	              <img src="img/house.png">
+	            </a>
+	            <div class="line__link line__link--item">Pages</div>
+	            <a href="#" class="line__link line__link--grad">Poster</a>
+	          </div>
+	        </div>
+	        <nav class="navbar navbar-expand-lg container">          
 	          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-	            <span class="navbar-toggler-icon"></span>
+	            <i class="fas fa-bars paragragh">              
+	            </i>
 	          </button>
 	          <div class="collapse navbar-collapse" id="navbarNav">
 	            <ul class="navbar-nav" id="menu">
@@ -71,7 +81,7 @@
 							<div class="subtitle">Night club</div>
 						</div>
 						<div class="first__category">
-							<div class="title">Poster</div>
+							<div class="title title--left">Poster</div>
 							<div class="subtitle">only juicy parties</div>
 						</div>
 						<a href="#block2" class="first__link link-more">More info</a>
@@ -89,7 +99,7 @@
 							<div class="subtitle">Night club</div>
 						</div>
 						<div class="first__category">
-							<div class="title">Gallery</div>
+							<div class="title title--left">Gallery</div>
 							<div class="subtitle">Photo parties</div>
 						</div>
 						<a href="#block3" class="first__link link-more">More info</a>
@@ -107,7 +117,7 @@
 							<div class="subtitle">Night club</div>
 						</div>
 						<div class="first__category">
-							<div class="title">Menu</div>
+							<div class="title title--left">Menu</div>
 							<div class="subtitle">Great cocktails to relax</div>
 						</div>
 						<a href="#block4" class="first__link link-more">More info</a>
@@ -117,20 +127,11 @@
 
 		</section>
 <!--POSTER-->
-		<section data-anchor="block2" id="#block2" class="section h-100" style="background: url('img/bg-poster.jpg');">
-			<div class="line">
-				<div class="container line--general">
-					<a href="#" class="line__home">
-						<img src="img/house.png">
-					</a>
-					<div class="line__link">Pages</div>
-					<a href="#" class="line__link line__link--grad">Poster</a>
-				</div>
-			</div>
+		<section data-anchor="block2" id="#block2" class="section" style="background: url('img/bg-poster.jpg');">
 			<div class="container h-100 py-5">
 				<div class="row h-100">
 					<div class="title col-12 py-5 event__titles">Poster</div>
-					<div class="col-4 event">
+					<div class="col-md-4 event">
 						<div class="event--item">
 							<div class="row m-0">
 								<div class="col-3 event__date">
@@ -153,7 +154,7 @@
 							<a href="#" class="event__link--hide link-more">Hide</a>
 						</div>
 					</div>
-					<div class="col-4 event">
+					<div class="col-md-4 event">
 						<div class="event--item">
 							<div class="row m-0">
 								<div class="col-3 event__date">
@@ -173,7 +174,7 @@
 							<a href="#" class="event__link--hide link-more">Hide</a>
 						</div>
 					</div>
-					<div class="col-4 event">
+					<div class="col-md-4 event">
 						<div class="event--item">
 							<div class="row m-0">
 								<div class="col-3 event__date">
@@ -199,16 +200,7 @@
 <!--END POSTER-->
 
 <!--GALLERY-->
-		<section data-anchor="block3" id="#block3" class="section h-100" style="background: url('img/bg-gallery.jpg');">
-			<div class="line">
-				<div class="container line--general">
-					<a href="#" class="line__home">
-						<img src="img/house.png">
-					</a>
-					<div class="line__link">Pages</div>
-					<a href="#" class="line__link line__link--grad">Gallery</a>
-				</div>
-			</div>
+		<section data-anchor="block3" id="#block3" class="section" style="background: url('img/bg-gallery.jpg');">
 			<div class="container py-5">
 				<div class="title py-5">Gallery</div>
 				<div id="lightgallery" class="row gallery">
@@ -248,30 +240,21 @@
 <!--END GALLERY-->	
 
 <!--MENU-->
-		<section data-anchor="block4" id="#block4" class="section h-100" style="background: url('img/bg-menu.jpg');">
+		<section data-anchor="block4" id="#block4" class="section" style="background: url('img/bg-menu.jpg');">
 			<div class="h-100 new">
-				<div class="line">
-					<div class="container line--general">
-						<a href="#" class="line__home">
-							<img src="img/house.png">
-						</a>
-						<div class="line__link">Pages</div>
-						<a href="#" class="line__link line__link--grad">Menu</a>
-					</div>
-				</div>
 				<div class="container py-5 h-100">
 					<div class="row h-100">
 						<div class="title col-12 py-5">Menu</div>
-						<a href="#" class="col-4 text-center py-5">
-							<img src="img/icon-menu1-1.png">
+						<a href="#" class="col-md-4 text-center py-5">
+							<img class="menu__image" src="img/icon-menu1-1.png">
 							<div class="menu__item">Wine list</div>
 						</a>
-						<a href="#" class="col-4 text-center py-5">
-							<img src="img/icon-menu2.png">
+						<a href="#" class="col-md-4 text-center py-5">
+							<img class="menu__image" src="img/icon-menu2.png">
 							<div class="menu__item">Kitchen</div>
 						</a>
-						<a href="#" class="col-4 text-center py-5">
-							<img src="img/icon-menu3.png">
+						<a href="#" class="col-md-4 text-center py-5">
+							<img class="menu__image" src="img/icon-menu3.png">
 							<div class="menu__item">Coctails</div>
 						</a>
 					</div>
@@ -279,11 +262,11 @@
 				<div class="new__news">
 					<div class="container">
 						<div class="row">
-							<div class="col-6 d-flex align-items-center">
+							<div class="col-md-6 d-flex align-items-center">
 								<img class="pr-3" src="img/house.png" alt="">
 								<div class="news__title">SUBSCRIBE TO OUR NEWSLETTER</div>
 							</div>
-							<div class="col-5 h-100">
+							<div class="col-md-5 h-100">
 								<form class="form">
 								  <div class="form-group">
 								    <input class="form__email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Your email adress">
@@ -299,10 +282,10 @@
 <!--END MENU-->	
 
 <!--FOOTER-->
-		<section data-anchor="block5" id="#block5" class="section h-100" style="background: #191c21;">
+		<section data-anchor="block5" id="#block5" class="section" style="background: #191c21;">
 			<div class="container h-100">
 				<div class="row h-100">
-					<div class="col-8 d-flex flex-column justify-content-around">
+					<div class="col-md-8 d-flex flex-column justify-content-around">
 						<div>
 							<div class="">
 								<a href="#">
@@ -326,7 +309,7 @@
 							<div class="pt-3"><span class="footer__title">Almondo </span>©, 2019. Privacy Policy</div>
 						</div>
 					</div>
-					<div class="col-4 d-flex align-items-center">
+					<div class="col-md-4 d-flex align-items-center">
 						<div>
 							<div class="footer__touch">
 								Get in Touch <br/> With Us
@@ -372,12 +355,42 @@
 			        menu: '#menu',
 			        css3: true,
 			        scrollingSpeed: 1000,
-			        responsiveWidth: 992
+			        responsiveWidth: 992,
+			        afterLoad: function(origin){
+						var loadedSection = this;
+						var menus = $('.nav-item');
+				            for (var i = 0; i < menus.length; i++) {
+				            	var menu = menus[i];
+				            	if ($(menu).hasClass('active')) {
+				            		var item = $(menu).children().text();
+									$('.line__link--grad').text(item);
+				            	}
+				            }						
+					}
 			    });			    
 			});
 	
 			$(document).ready(function() {
 	            $("#lightgallery").lightGallery(); 
+	        });
+
+	        $(document).scroll(function() {
+	        	var menus = $('.nav-item');
+	            for (var i = 0; i < menus.length; i++) {
+	            	var menu = menus[i];
+
+	            	if ($(menu).hasClass('active')) {
+	            		var item = $(menu).children().text();
+	            		// console.log($(item));            		
+						$('.line__link--grad').text(item);
+	            	}
+	            }
+	        });
+	        $('.gallery__item').click(function(){
+				$('.fixed-top').fadeOut();
+	        });
+	        $('.lg-close').click(function(){
+				$('.fixed-top').fadeIn();
 	        });
 
 			
