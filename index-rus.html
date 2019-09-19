@@ -352,43 +352,8 @@
 	<script src="//cdn.jsdelivr.net/jquery.color-animation/1/mainfile"></script>
 		<script>
 			
-			$(document).ready(function pages() {
-			    $('#fullpage').fullpage({
-			        anchors: ['block1', 'block2', 'block3', 'block4', 'block5'],
-			        menu: '#menu',
-			        css3: true,
-			        scrollingSpeed: 1000,
-			        responsiveWidth: 992,
-			        afterLoad: function(origin){
-						var loadedSection = this;
-						var menus = $('.nav-item');
-				            for (var i = 0; i < menus.length; i++) {
-				            	var menu = menus[i];
-				            	if ($(menu).hasClass('active')) {
-				            		var item = $(menu).children().text();
-									$('.line__link--grad').text(item);
-				            	}
-				            }						
-					}
-			    });			    
-			});
 	
-			$(document).ready(function() {
-	            $("#lightgallery").lightGallery(); 
-	        });
-
-	        $(document).scroll(function() {
-	        	var menus = $('.nav-item');
-	            for (var i = 0; i < menus.length; i++) {
-	            	var menu = menus[i];
-
-	            	if ($(menu).hasClass('active')) {
-	            		var item = $(menu).children().text();
-	            		// console.log($(item));            		
-						$('.line__link--grad').text(item);
-	            	}
-	            }
-	        });
+			
 	        $('.gallery__item').click(function(){
 				$('.fixed-top').fadeOut();
 	        });
